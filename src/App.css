@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+.header {
+  background: lightgrey;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.container {
+  display: flex;
+    flex-direction: column;
+  background: rgba(235, 204, 199, 0.45);
+  padding: 15px 0;
+  height: 500px;
+  position: relative;
+    width: 100%;
+}
+.box {
+  background: cornsilk;
+}
+.footer {
+  padding: 15px 0;
+  background: aliceblue;
+}
+.navs {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+  padding: 10px;
+  background: floralwhite;
+  height: 15px;
+  font-size: 15px;
+  width: 200px;
+}
+.modal {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 50%;
+  height: 200px;
+  padding: 15px;
+  font-size: 35px;
+  background: mediumaquamarine;
+}
+.close {
+  float: right;
+}
+button {
+    height: 35px;
+    width: 70px;
+}
+.table {
+  background: aliceblue;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 50%;
+}
+thead {
+  background: #deeefc;
+}
+td {
+  border: 1px solid black
+}

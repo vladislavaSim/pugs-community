@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration:none;
+    color: black;
+}
+.main {
+    position: relative;
+}
+.main_page{
+    background: rgba(222, 232, 252, 0.58);
+    width: 100%;
+    height: 700px;
+    position: absolute;
+}
+.header {
+    height: 35px;
+    z-index: 5;
+    top: 25%;
+    left: 35%;
+    padding: 5px 0;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+.data_user_box {
+    width: 250px;
+    margin: 15% auto ;
+    text-align: center;
+    background: rgb(252, 241, 210);
+    border: 3px solid lightgray;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 10px 15px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+}
+.data_user_box input {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+.user_box {
+    position: absolute;
+    width: 40%;
+    left: 25%;
+    top: 35%;
+    text-align: center;
+    background: rgba(253, 242, 184, 0.44);
+    border: 3px solid lightgray;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 10px 15px;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 5;
+}
+.user_box_buttons {
+    font-size: 18px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 15px;
+    background: #fcd2a6;
+    cursor: pointer;
+    display: block;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+.user_box_buttons:hover {
+    //box-shadow: -4px -1px 5px 2px rgb(0 0 0 / 54%);
+    box-shadow: none;
+}
+.modal {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background: #deeefc;
+    width: 200px;
+    text-align: center;
+}
+.shader {
+    filter: brightness(50%);
+}
+button {
+    border: 1px solid #110045;
+    cursor: pointer;
+}
+button:hover {
+    transform: translateY(2px);
+    background: #e0bb94;
+}
+h2 {
+    text-align: center;
+}
+.teaInfobox {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 5px 15px;
+}
+.teaInfobox span {
+    background: #deeefc;
+    margin-right: 10px;
+    padding: 5px 15px;
+    font-size: 17px;
+}
+.teaInfobox span:hover {
+    background: #b2dcff;
+    cursor: pointer;
+}
+.success_message {
+    width: 100%;
+    font-size: 15px;
+    background: lightgreen;
+    border: 2px solid #015c01;
+    border-radius: 15px;
+    text-align: center;
+}
+.profile_container {
+    width: 100%;
+    font-size: 20px;
+    background: white;
+    text-align: right;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-family: "Roboto Mono", monospace;
+    float: right;
+}
+.buttons_container {
+    display: flex;
+    width: 100%;
+    background: silver;
+    background: url("img/paw-print.jpg");
+    background-position-y: center;
+}
+.return {
+    float: left;
+    margin: 0 15px;
+}
+.edit_user_info {
+    margin: 15px 0 0 15px;
+}
+.edit_user_info input{
+    font-size: 17px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.edit_user_title {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+.edit_save_btn {
+    font-size: 15px;
+    border: 2px solid lightgray;
+    padding: 5px;
+    margin: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 60px;
+}
+.return_btn {
+    font-size: 15px;
+    background: #e0dffc;
+    border: 2px solid lightgray;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 60px;
+}
+.puggy {
+    width: 96px;
+    position: absolute;
+    top: -67px;
+    left: 95px;
+}
+
