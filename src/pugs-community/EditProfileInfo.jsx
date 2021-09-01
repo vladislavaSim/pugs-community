@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import {isEdit, logIn} from "./action/action";
+import defaultProfPic from './img/default-profile-pic.png'
 
 function EditProfileInfo(props) {
     const {info, isEdit, toggleToEdit, saveInfo} = props;
@@ -9,9 +10,12 @@ function EditProfileInfo(props) {
         return { ...info,
             [key]: e.target.value}
     }
-
     function renderUserInfo(obj) {
             return <div className='edit_user_info'>
+                { isEdit ?
+                    <input type='file'/> :
+                    <img src={defaultProfPic} alt='profilePic'></img>
+                        }
                 <p className='edit_user_title'>Username:</p>
                 { isEdit
                     ? <input value={obj.username} onChange={(e) => saveInfo(prepObj('username', e))} />
@@ -20,7 +24,7 @@ function EditProfileInfo(props) {
                 <p className='edit_user_title'>Password:</p>
                 { isEdit
                     ? <input value={obj.password} onChange={(e) => saveInfo(prepObj('password', e))}/>
-                : <p>{obj.password}</p>}
+                : <p>{obj.password}</p> }
                 <button onClick={() => toggleToEdit()} className='edit_save_btn'>{ isEdit ? 'save' : 'edit'}</button>
             </div>
     }
