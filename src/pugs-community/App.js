@@ -13,7 +13,7 @@ export function App() {
         <Router>
             <div className='app'>
                 <Switch>
-                    <Route path='/main'>
+                    <Route path='/'>
                         <MainPage />
                     </Route>
                     <Route path='/signUp'>
