@@ -32,7 +32,7 @@ function LoginPage(props) {
             Please log in:
             <input type="text" onChange={(e) => submit(prepareObject('username', e))} placeholder='username'/>
             <input type="password" onChange={(e) => submit(prepareObject('password', e))} placeholder='password'/>
-            <button type='submit' onClick={() => combineSuccess()} className='user_box_buttons'>Log In</button>
+            <button type='submit' onClick={() => combineSuccess()} className='user_box_buttons'>Log in</button>
             {info.username && info.password ? showingMessage() : null}
             <Link to='/main'>Return</Link>
         </div>
