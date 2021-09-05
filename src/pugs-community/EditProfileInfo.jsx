@@ -14,7 +14,7 @@ function EditProfileInfo(props) {
             return <div className='edit_user_info'>
                 { isEdit ?
                     <input type='file'/> :
-                    <img src={defaultProfPic} alt='profilePic'></img>
+                    <img src={defaultProfPic} className='profile-pic' alt='profilePic'></img>
                         }
                 <p className='edit_user_title'>Username:</p>
                 { isEdit
