@@ -53,7 +53,6 @@ import {combineReducers} from "redux";
 export function logInReducer(state = {username: '', password: ''}, action) {
     switch (action.type) {
         case 'LOG_IN':
-            console.log(action)
             return action.userInfo;
         default:
             return state;
@@ -85,6 +84,15 @@ export function toggleItemToEdit(state = false, action) {
             return state
     }
 }
+export function selectPic(state = null, action) {
+    switch (action.type) {
+        case 'SET_SELECTED_PIC':
+            return state = action.pic
+        default:
+            return state
+    }
+
+}
 /**
  * // it is STORE(STATE) AND IT IS OBJECT
  */
@@ -97,5 +105,6 @@ export default combineReducers({
     logInReducer,
     signUpReducer,
     showSuccess,
-    toggleItemToEdit
+    toggleItemToEdit,
+    selectPic
 })
