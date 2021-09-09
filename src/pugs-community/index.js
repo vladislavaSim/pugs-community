@@ -6,7 +6,6 @@ import {App} from "./App";
 import reducers from "./reducer/reducer";
 
 const store = createStore(reducers);
-console.log(1)
 render(
     <Provider store={store}>
         <App />
