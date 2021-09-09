@@ -23,9 +23,9 @@ export function App() {
                         <LoginPage />
                     </Route>
                     <Route path='/profile'>
-                        <AuthHoc>
+
                             <Profile />
-                        </AuthHoc>
+
                     </Route>
                     <Route path='/editProfile'>
                         <EditProfileInfo />
