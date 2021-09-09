@@ -162,7 +162,6 @@ h2 {
     margin: 5px 15px;
     border-radius: 15px;
     cursor: pointer;
-    width: 60px;
 }
 .return_btn {
     font-size: 15px;
@@ -180,4 +179,10 @@ h2 {
     top: -67px;
     left: 95px;
 }
-
+.profile-pic {
+    width: 120px;
+}
+.random-pug {
+    height: 200px;
+    margin: 15px 33%;
+}
