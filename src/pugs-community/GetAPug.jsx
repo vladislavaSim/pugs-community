@@ -26,9 +26,9 @@ export function GetAPug() {
     }
 
     return (
-        <>
+        <div className='pugs-holder'>
             {randomPug()}
             <button className='edit_save_btn' onClick={updateIndex}>one more pug!</button>
-        </>
+        </div>
     );
 }
