@@ -34,3 +34,6 @@ export function isEdit() {
 export function setUploadedPicObj(pic) {
     return {type: 'SET_SELECTED_PIC', pic}
 }
+export function addNewToDo(text) {
+    return {type: 'ADD_NEW_TODO', text}
+}

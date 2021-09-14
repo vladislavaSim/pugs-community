@@ -91,7 +91,14 @@ export function selectPic(state = null, action) {
         default:
             return state
     }
-
+}
+export function newToDo(state = '', action) {
+    switch (action.type) {
+        case 'ADD_NEW_TODO':
+            return state = action.text
+        default:
+            return state
+    }
 }
 /**
  * // it is STORE(STATE) AND IT IS OBJECT
@@ -106,5 +113,6 @@ export default combineReducers({
     signUpReducer,
     showSuccess,
     toggleItemToEdit,
-    selectPic
+    selectPic,
+    newToDo
 })
