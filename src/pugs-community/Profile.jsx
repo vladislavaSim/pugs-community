@@ -25,9 +25,7 @@ export function Profile() {
             return <GetAPug/>
         } else if(tab === 2) {
             return <Messages />
-        } else if(tab === 3){
-            return <EditProfileInfo />
-        } else if(tab === 4) {
+        }else if(tab === 3) {
             return <ToDoList/>
         } else {
                 return null
@@ -47,7 +45,7 @@ export function Profile() {
             </div>
             <div className='buttons_container'>
                 <button onClick={() => handleEditPage()} className='user_box_buttons'>Edit profile</button>
-                <button className='user_box_buttons' onClick={() => setTab(4)}>to do list</button>
+                <button className='user_box_buttons' onClick={() => setTab(3)}>to do list</button>
                 <button className='user_box_buttons' onClick={() => setTab(2)}>Messages</button>
                 <button className='user_box_buttons' onClick={() => setTab(1)}>Get a pug</button>
                 <button className='user_box_buttons' onClick={exit}>Exit</button>
