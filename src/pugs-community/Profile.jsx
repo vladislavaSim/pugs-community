@@ -50,6 +50,7 @@ export function Profile() {
                 <button className='user_box_buttons' onClick={() => setTab(4)}>to do list</button>
                 <button className='user_box_buttons' onClick={() => setTab(2)}>Messages</button>
                 <button className='user_box_buttons' onClick={() => setTab(1)}>Get a pug</button>
+                <button className='user_box_buttons' onClick={() => setTab(5)}>Secret button</button>
                 <button className='user_box_buttons' onClick={exit}>Exit</button>
             </div>
             {switchTabs()}

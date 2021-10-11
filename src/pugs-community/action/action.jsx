@@ -37,3 +37,21 @@ export function setUploadedPicObj(pic) {
 export function addNewToDo(text) {
     return {type: 'ADD_NEW_TODO', text}
 }
+export function cocktailsThunkStarted() {
+    return {type: 'NEW_COCKTAIL'}
+}
+export function cocktailsThunk({drinkPic, drinkName, drinkType, drinkComponents}) {
+    return dispatch => {
+        dispatch(cocktailsThunkStarted());
+
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+            .then(function(response) {
+                return response.json()
+            })
+            .then(function (data) {
+                console.log(data);
+            })
+            .catch(function() {
+                alert('oops! Try again later...')
+            });
+    }}
