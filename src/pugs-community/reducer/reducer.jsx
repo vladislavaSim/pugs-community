@@ -100,7 +100,7 @@ export function newToDo(state = '', action) {
             return state
     }
 }
-export function newCocktail(state = '', action) {
+export function newCocktail(state = {}, action) {
     switch (action.type) {
         case 'NEW_COCKTAIL':
             return state = action

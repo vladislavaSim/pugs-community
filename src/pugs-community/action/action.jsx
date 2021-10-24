@@ -55,3 +55,4 @@ export function cocktailsThunk({drinkPic, drinkName, drinkType, drinkComponents}
                 alert('oops! Try again later...')
             });
     }}
+console.log(cocktailsThunk)
